@@ -112,5 +112,5 @@ class TrainArgs(Serializable):
 
         if not self.ckpt_only_lora:
             logging.warning(
-                "You are have disabled `ckpt_only_lora` and are thus merging the trained LoRA checkpoint into the base model upon checkpointing. This might lead to OOM erros - make sure you have enough CPU and GPU memory."
+                "You have disabled `ckpt_only_lora` and are thus merging the trained LoRA checkpoint into the base model upon checkpointing. This might lead to OOM erros - make sure you have enough CPU and GPU memory."
             )
